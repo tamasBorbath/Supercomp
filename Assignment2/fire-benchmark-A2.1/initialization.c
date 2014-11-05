@@ -58,7 +58,7 @@ void getFlags(int* input_key, char* file_in, int* part_key, char* part_type, int
 	}
 }
 
-int initialization(char* file_in, char* part_type, char* read_type, int nprocs, int myrank, int* nintci, int* nintcf, int* nextci,
+int initialization(char* file_in, char* part_type, char* read_type, int nprocs, int my_rank, int* nintci, int* nintcf, int* nextci,
 		int* nextcf, int*** lcc, double** bs, double** be, double** bn, double** bw, double** bl, double** bh, double** bp, double** su,
 		int* points_count, int*** points, int** elems, double** var, double** cgup, double** oc, double** cnorm, int** local_global_index) {
 	// ======== Setting up flags for test functions =========
@@ -66,7 +66,8 @@ int initialization(char* file_in, char* part_type, char* read_type, int nprocs, 
 	int part_key = 0;
 	int read_key = 0;
 	getFlags(&input_key, file_in, &part_key, part_type, &read_key, read_type);
-	printf("input: %d partitioning: %d read: %d\n", input_key, part_key, read_key);
+	long long time_usec=0;
+//	printf("input: %d partitioning: %d read: %d\n", input_key, part_key, read_key);
 	// ======== Setting up flags for test functions =========
 	/********** START INITIALIZATION **********/
 	int i = 0;
@@ -105,7 +106,7 @@ int initialization(char* file_in, char* part_type, char* read_type, int nprocs, 
 		(*bl)[i] = 0.0;
 	}
 	// =============Doing the test function calls=================
-//	int write_pstats_exectime(int input_key, int part_key, int read_key, int my_rank, long long time_usec);
+	write_pstats_exectime(input_key, part_key, read_key, my_rank, time_usec);
 	return 0;
 }
 
