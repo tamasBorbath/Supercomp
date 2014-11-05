@@ -10,6 +10,7 @@
 #include "util_read_files.h"
 #include "initialization.h"
 #include "string.h"
+#include "stdio.h"
 
 /* @param input_key: 1 - tjunc
  2 - drall

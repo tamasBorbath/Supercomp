@@ -27,3 +27,12 @@
 *.i*86
 *.x86_64
 *.hex
+*/gccg
+
+# Open files
+*~
+
+# Eclipse project files
+*.cproject
+*.project
+Assignment2/fire-benchmark-A2.1/Debug/
