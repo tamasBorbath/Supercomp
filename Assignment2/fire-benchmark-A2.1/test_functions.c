@@ -4,8 +4,7 @@
  * @date 22-Oct-2012, 03-Nov-2014
  * @author V. Petkov, A. Berariu
  */
-
-#include <stdio.h>
+#include "test_functions.h"
 
 int test_distribution(char *file_in, char *file_vtk_out, int *local_global_index,
                       int local_num_elems, double *scalars) {

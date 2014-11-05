@@ -8,6 +8,11 @@
 #ifndef TEST_FUNCTIONS_H_
 #define TEST_FUNCTIONS_H_
 
+#include "util_write_files.h"
+#include "util_read_files.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 int test_distribution(char *file_in, char *file_vtk_out, int *local_global_index,
                       int local_num_elems, double *scalars);
 
