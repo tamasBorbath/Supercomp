@@ -1,1 +1,1 @@
-mpiexec -n 4 ./gccg cojack.bin classic oneread
+mpiexec -n 4 ./gccg cojack.geo.bin classic oneread

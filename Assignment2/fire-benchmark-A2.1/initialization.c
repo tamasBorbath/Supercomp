@@ -24,16 +24,16 @@
  */
 void getFlags(int* input_key, char* file_in, int* part_key, char* part_type, int* read_key, char* read_type) {
 	// getting value for file_in
-	if (strcmp(file_in, "tjunc.bin") == 0)
+	if (strcmp(file_in, "tjunc.geo.bin") == 0)
 		*input_key = 1;
-	else if (strcmp(file_in, "drall.bin") == 0)
+	else if (strcmp(file_in, "drall.geo.bin") == 0)
 		*input_key = 2;
-	else if (strcmp(file_in, "pent.bin") == 0)
+	else if (strcmp(file_in, "pent.geo.bin") == 0)
 		*input_key = 3;
-	else if (strcmp(file_in, "cojack.bin") == 0)
+	else if (strcmp(file_in, "cojack.geo.bin") == 0)
 		*input_key = 4;
 	else {
-		printf("\nWrong input file name specified\nOptions are: tjunc.bin, drall.bin, pent.bin, cojack.bin\n");
+		printf("\nWrong input file name specified\nOptions are: tjunc.geo.bin, drall.geo.bin, pent.geo.bin, cojack.geo.bin\n");
 		exit(1);
 	}
 	// getting value for part_type
