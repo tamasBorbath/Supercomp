@@ -98,6 +98,11 @@ int main(int argc, char *argv[]) {
 
     /********** START FINALIZATION **********/
     //finalization(...);
+
+    int total_iters =0;
+    residual_ratio = 0.0;
+    
+    finalization(file_in, file_in, total_iters, residual_ratio,nintci, nintcf, points_count, points,elems, var, cgup, su);
     /********** END FINALIZATION **********/
 
     // cleanup allocated memory
