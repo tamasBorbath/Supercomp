@@ -27,7 +27,7 @@
 *.i*86
 *.x86_64
 *.hex
-*/gccg
+Assignment2/fire-benchmark-A2.1/gccg
 
 # Open files
 *~
